@@ -140,7 +140,7 @@ void blinkN(uint8_t n, uint8_t l = led)
 {
   for (uint8_t i = 0; i < n; i++) {
     digitalWrite(l, HIGH);
-    sleepDelay(2, false);
+    sleepDelay(3, false);
     digitalWrite(l, LOW);
     sleepDelay(512);
     sleepDelay(256);
@@ -209,9 +209,9 @@ void loop() {
   sleepDelay(32);
   pinMode(reset_ESP, INPUT);
 
-  sleepDelay(1024);
-  sleepDelay(1024);
-  sleepDelay(1024);
+  // sleepDelay(1024);
+  // sleepDelay(1024);
+  // sleepDelay(1024);
   
   auto startcnt = cnt;
 

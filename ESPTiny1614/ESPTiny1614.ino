@@ -7,7 +7,7 @@
 #define USE_BME  0
 #define USE_ESP 0
 
-#define USE_OSC 0
+#define USE_OSC 1
 
 // Slowdown 2 sec every 24 hours:
 // 24 * 3600 / 2 = 43200 ticks with 2 second interval in 24 hours.
@@ -223,9 +223,9 @@ void setup() {
     blinkN(1, led);
   }
 
-  sleepDelay(1000);
-  for (int d= 1; d <= 10; d++)
-    testDelay(d);
+  // sleepDelay(1000);
+  // for (int d= 1; d <= 10; d++)
+  //   testDelay(d);
   sleepDelay(5000);
 }
 
